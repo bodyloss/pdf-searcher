@@ -1,0 +1,24 @@
+{
+  "name": "pdf-searcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bodyloss/pdf-searcher.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bodyloss/pdf-searcher/issues"
+  },
+  "homepage": "https://github.com/bodyloss/pdf-searcher#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pdf-text-extract": "^1.4.1",
+    "sqlite3": "^3.1.4"
+  }
+}
