@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+"use strict"
+
+const path = require('path');
+const sqlite = require('sqlite3');
+
+if (process.argv.length !== 4) {
+    console.error('Usage: ./importPdf pdf-file.pdf pdf-title');
+    process.exit(1);
+}
+
+const pdfFile = process.argv[2];
+const pdfTitle = process.argv[3];
+const PdfInserter = require('../src/pef-insert');
+
+if (path.exists(__dirName + pdfFile, (exists) => {
+    if (!exists) {
+        console.error(`${__dirName = pdfFile} does not eixst`);
+        return;
+    }
+
+    const inserter = new PdfInserter(__difName + pdfFile, pdfTitle);
+    inserter.extract().then(() => {});
+}));

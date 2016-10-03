@@ -19,6 +19,6 @@
   "dependencies": {
     "express": "^4.14.0",
     "pdf-text-extract": "^1.4.1",
-    "sqlite3": "^3.1.4"
+    "sqlite": "^2.2.0"
   }
 }
